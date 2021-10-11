@@ -7,52 +7,61 @@ namespace HarryPotter
 {
     public class Basket
     {
-        private readonly IList<Book> _books;
+        IList<Book> books;
         public Basket(IEnumerable<Book> books)
         {
-            _books = (IList<Book>) books.ToList();
+            this.books = books.ToList();
         }
 
         public int HowMany(Book b)
         {
-            return  _books.Count(x => x == b);
+            int cpt = 0;
+            foreach (Book book in books)
+            {
+                if (book.Equals(b))
+                    cpt++;
+            }
+            return cpt;
 
         }
 
         public int Count()
         {
-            var x = _books.Count;
-            return x;
+            return books.Count;
+
 
         }
 
         public int HowManyDifferent()
         {
-            return _books.Distinct().Count();
+            var different = books.Distinct();
+            return different.Count();
         }
 
-        public  bool IsEmpty()
+        public bool IsEmpty()
         {
-            return !(_books != null && _books.Any());
-            
-
-
+            if (books.Count == null)
+            {
+                return true;
+            }
+            return false;
         }
+
+
+
+
 
         public Basket RemoveDifferent(int nbToRemove)
         {
-            var distinctData =  this._books.Distinct();
-            var sortedData = distinctData.OrderBy(x => HowMany(x));
-            var booksToRemove = sortedData.Reverse().Take(nbToRemove);
-            var booksData = _books.ToList(); // Get IEnumerable as List
+            var distinctDataSorted = books.Distinct().OrderBy(x => HowMany(x));
 
-            foreach (var item in booksToRemove)
+            var ToRemove = distinctDataSorted.Reverse().Take(nbToRemove);
+
+            foreach (var livre in ToRemove)
             {
-
-
-                booksData.Remove(_books.First(x => x.Equals(item))); // Remove item
+                books.ToList().Remove(books.First(boukin => boukin.Equals(livre))); // Remove item
             }
-            return new Basket(booksData);
+            return new Basket(books.ToList());
         }
     }
 }
