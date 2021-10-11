@@ -1,0 +1,12 @@
+E:\OneDrive - EMCC\Bureau\TP1\HarryPotter\bin\Debug\net5.0\HarryPotter.deps.json
+E:\OneDrive - EMCC\Bureau\TP1\HarryPotter\bin\Debug\net5.0\HarryPotter.dll
+E:\OneDrive - EMCC\Bureau\TP1\HarryPotter\bin\Debug\net5.0\ref\HarryPotter.dll
+E:\OneDrive - EMCC\Bureau\TP1\HarryPotter\bin\Debug\net5.0\HarryPotter.pdb
+E:\OneDrive - EMCC\Bureau\TP1\HarryPotter\obj\Debug\net5.0\HarryPotter.csproj.AssemblyReference.cache
+E:\OneDrive - EMCC\Bureau\TP1\HarryPotter\obj\Debug\net5.0\HarryPotter.GeneratedMSBuildEditorConfig.editorconfig
+E:\OneDrive - EMCC\Bureau\TP1\HarryPotter\obj\Debug\net5.0\HarryPotter.AssemblyInfoInputs.cache
+E:\OneDrive - EMCC\Bureau\TP1\HarryPotter\obj\Debug\net5.0\HarryPotter.AssemblyInfo.cs
+E:\OneDrive - EMCC\Bureau\TP1\HarryPotter\obj\Debug\net5.0\HarryPotter.csproj.CoreCompileInputs.cache
+E:\OneDrive - EMCC\Bureau\TP1\HarryPotter\obj\Debug\net5.0\HarryPotter.dll
+E:\OneDrive - EMCC\Bureau\TP1\HarryPotter\obj\Debug\net5.0\ref\HarryPotter.dll
+E:\OneDrive - EMCC\Bureau\TP1\HarryPotter\obj\Debug\net5.0\HarryPotter.pdb
